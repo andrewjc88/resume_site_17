@@ -1,0 +1,112 @@
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800; 
+  text-align: center;
+  color: #FF4A45;
+
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: rgb(58, 58, 58);
+
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
+}
+
+.Section {
+
+  height: 90vh;
+  width: 90vw;
+
+  justify-content: space-between;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0em;
+
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ACEEE6), to(#ACBCEE));
+  background-image: -webkit-linear-gradient(top, start-color, end-color);
+  background-image: -moz-linear-gradient(top, start-color, end-color);
+  background-image: linear-gradient(to bottom, start-color, end-color);
+  box-shadow:  10px 10px 10px grey;
+  
+}
+
+.Intro {  
+  /* justify-content: space-between; */
+
+  background-image: url("./img/pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-position: auto; 
+  overflow: hidden;
+
+}
+
+.Logo {
+  width: 70%;
+  max-width: 25em; 
+
+  margin-top: 40%;
+
+}
+
+.DownArrow {
+  max-width: 2em;
+  padding: 1em;
+
+    
+}
+
+.About {
+  justify-content: center;
+  padding-top: 4em;
+
+}
+
+.Selfie {
+  width: 50%;
+  max-width: 13em;
+  border-radius: 10em;
+  box-shadow:  5px 5px 5px grey;
+
+
+}
+
+.AboutMe {
+  padding: 2em 3em;
+  text-align: center;
+  max-width: 60em;
+}
+
+.Projects {
+  
+}
+
+.Carousel {
+
+}
+
+.Tools {
+
+}
+
+.Contact {
+
+
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
