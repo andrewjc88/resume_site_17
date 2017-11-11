@@ -40,7 +40,7 @@ class App extends Component {
           <h1>About Me</h1>
           <div className='AboutCont'>
             <img src={Me} className='Selfie'  alt="A picture of me"/>
-            <p className="AboutMe">Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand industry knowledge in web development. I excel at working at collaborating in a fast paced environment and rapid prototyping ideas on&nbsp;the&nbsp;fly.</p>
+            <p className="AboutMe">Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand industry knowledge in web development. I excel at collaborating in a fast paced environment and rapid prototyping ideas into&nbsp;scaleable&nbsp;codebases.</p>
           </div>
         </div>
 
