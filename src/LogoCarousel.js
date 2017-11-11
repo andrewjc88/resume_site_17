@@ -10,22 +10,22 @@ class LogoCarousel extends React.Component {
       return images;
     }
 
-    const images = inportImgs(require.context('./img/logos', false, /\.(png|jpe?g|svg)$/));
+    const images = inportImgs(require.context('./img/logos', false, /\.(gif|png|jpe?g|svg)$/));
     console.log('images');
     // const slides = images.map((image) => 
     //   <div><img className="logoImg" src='{image}' alt=""/></div>
     // )
 
     let settings = {
-      adaptiveHeight: false,
+      // adaptiveHeight: true,
       autoplay: true,
-      speed: 3000,
+      // speed: 900,
+      autoplaySpeed: 900,
       infinite: true,
-      slidesToShow: 8,
-      slidesToScroll: 1,
-      dots: false,
-      pauseOnHover: false,
-      autoplaySpeed: 300,
+      // slidesToShow: 20,
+      // slidesToScroll: 1,
+      // dots: false,
+      // pauseOnHover: false,
       variableWidth: true,
       responsive: [
         {
@@ -52,7 +52,7 @@ class LogoCarousel extends React.Component {
         <div><img className="logoImg" src={images["js_logo.png"]} alt=""/></div>
         <div><img className="logoImg" src={images["photoshop-cc.png"]} alt=""/></div>
         <div><img className="logoImg" src={images["react_logo.png"]} alt=""/></div>
-        <div><img className="logoImg" src={images["Sketch_logo_frame.png"]} alt=""/></div>
+        <div><img className="logoImg" src={images["Sketch_logo_frame.svg.png"]} alt=""/></div>
 
       </Slider>
     );

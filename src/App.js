@@ -40,7 +40,7 @@ class App extends Component {
           <h1>About Me</h1>
           <div className='AboutCont'>
             <img src={Me} className='Selfie'  alt="A picture of me"/>
-            <p className="AboutMe">Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand industry knowledge in web development. I excel at working at collaborating in a fast paced environment and rapid prototyping ideas on the fly.</p>
+            <p className="AboutMe">Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand industry knowledge in web development. I excel at working at collaborating in a fast paced environment and rapid prototyping ideas on&nbsp;the&nbsp;fly.</p>
           </div>
         </div>
 
@@ -53,7 +53,7 @@ class App extends Component {
 
         <div className='Tools Section' data-aos="fade-up">
           <h1>My Favorite Tools</h1>
-          <p>Here are some of my favorite tools and technologies that I love to use to make the things that I make. </p>
+          <p>Here are some of my favorite tools and technologies that I love to use to make the things that&nbsp;I&nbsp;make. </p>
           <LogoCarousel/>
         </div>
 
@@ -61,12 +61,12 @@ class App extends Component {
           <h1>Contact Me</h1>
           <div className='ContactCont'>
             <h3>Andrew Cornell<br/>San Francisco, CA</h3>
-          </div>
-          <img src={QRcode} alt="My QR Code image"/>
-          <div>
-            <a href="andrew@cornellcreates.com">email</a><br/>
-            <a href="https://github.com/andrewjc88">github</a><br/>
+          <img className="QRimage" src={QRcode} alt="My QR Code image"/>
+          <div className="ContactLinks">
+            <a href="andrew@cornellcreates.com">email</a>
             <a href="https://www.linkedin.com/in/andrew-cornell-dev/">linkedin</a>
+            <a href="https://github.com/andrewjc88">github</a>
+          </div>
           </div>
         </div>
 

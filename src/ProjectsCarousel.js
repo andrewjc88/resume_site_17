@@ -10,52 +10,58 @@ class ProjectsCarousel extends React.Component {
       return images;
     }
 
-    const images = inportImgs(require.context('./img', false, /\.(png|jpe?g|svg)$/));
+    const images = inportImgs(require.context('./img/ProjectsCarousel', false, /\.(png|jpe?g|svg)$/));
 
     let settings = {
-      adaptiveHeight: true,
+      swipeToSlide: true,
       autoplay: true,
-      speed: 1500,
+      // speed: 1500,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: true,
       pauseOnHover: true,
       autoplaySpeed: 6000,
-      // variableWidth: true,
-      responsive: [
-        {
 
-        }
-      ]
+      dots: true,
+
+      adaptiveHeight: true,
+      adaptiveWidth: true, 
+      // variableWidth: true,
+      // variableHeight: true, 
+
+      // responsive: [
+      //   { breakpoint: 768, settings:{
+          
+      //   }}
+      // ]
     };
 
     return (
       <Slider {...settings}>
         <div className='Slider'>
-          <img className='SliderImg' src='https://source.unsplash.com/900x500/?sexy' alt=""/>
-          <h2>BookShelf App</h2>
-          <p className="SliderText">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
+          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
+          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
         </div>
         <div className='Slider'>
-          <img className='SliderImg' src='https://source.unsplash.com/900x500/?girl' alt=""/>
-          <h2>Portfolio Site</h2>
-          <p className="SliderText">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
+          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
+          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
         </div>
         <div className='Slider'>
-          <img className='SliderImg' src='https://source.unsplash.com/900x500/?woman' alt=""/>
-          <h2>Mare Group Project</h2>
-          <p className="SliderText">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
+          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
+          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
         </div>
         <div className='Slider'>
-          <img className='SliderImg' src='https://source.unsplash.com/900x500/?sunset' alt=""/>
-          <h2>t49 Agency</h2>
-          <p className="SliderText">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
+          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
+          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
         </div>
         <div className='Slider'>
-          <img className='SliderImg' src='https://source.unsplash.com/900x500/?lady' alt=""/>
-          <h2><a href="">Mare Group Project</a></h2>
-          <p className="SliderText">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
+          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
+          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
         </div>
       </Slider>
     );
