@@ -7,7 +7,7 @@ import DonwArrow from './img/downArrow.svg';
 import Me from './img/me.jpg';
 import codeImg from './img/code.jpg';
 import QRcode from './img/contactQR.png'
-
+import Resume from './downloads/Resume.pdf';
 import './App.css';
 
 class App extends Component {
@@ -40,7 +40,7 @@ class App extends Component {
           <h1>About Me</h1>
           <div className='AboutCont'>
             <img src={Me} className='Selfie'  alt="A picture of me"/>
-            <p className="AboutMe">Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand industry knowledge in web development. I excel at working at collaborating in a fast paced environment and rapid prototyping ideas on&nbsp;the&nbsp;fly.</p>
+            <p className="AboutMe">Driven, Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand expertise in web / mobile app development. Excels at communicating and collaborating in fast-paced environments. Enjoys rapid prototyping ideas and finding new creative solutions&nbsp;to&nbsp;problems.</p>
           </div>
         </div>
 
@@ -63,9 +63,10 @@ class App extends Component {
             <h3>Andrew Cornell<br/>San Francisco, CA</h3>
           <img className="QRimage" src={QRcode} alt="My QR Code image"/>
           <div className="ContactLinks">
-            <a href="andrew@cornellcreates.com">email</a>
+            <a href="mailto:contact@andrewjcornell.com">email</a>
             <a href="https://www.linkedin.com/in/andrew-cornell-dev/">linkedin</a>
             <a href="https://github.com/andrewjc88">github</a>
+            <a href={Resume} download>Resume</a>
           </div>
           </div>
         </div>

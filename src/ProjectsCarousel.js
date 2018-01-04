@@ -44,25 +44,15 @@ class ProjectsCarousel extends React.Component {
           <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
         </div>
         <div className='Slider'>
-          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
-          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
-          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
+          <img className='SliderImg' src={images["DealQuest.png"]} alt="DealQuest app Image"/>
+          <a href="https://andrewjc88.github.io/DEAL_QUEST/">DealQuest App</a>
+          <p className="SliderText">I used knockout.js, Foundation, google map JavaScript API and Groupon Ajax API to make a deal search tool.</p>
         </div>
-        <div className='Slider'>
-          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
-          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
-          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
-        </div>
-        <div className='Slider'>
-          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
-          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
-          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
-        </div>
-        <div className='Slider'>
-          <img className='SliderImg' src={images["MyReads.png"]} alt="My Reads app Image"/>
-          <a href="https://github.com/andrewjc88/reactnd-project-myreads-starter">My Reads App</a>
-          <p className="SliderText">In this app I used Create React App with React Router to pull books from an API and display and sort them</p>
-        </div>
+        {/* <div className='Slider'>
+          <img className='SliderImg' src={images["DealQuest.png"]} alt="DealQuest app Image"/>
+          <a href="https://andrewjc88.github.io/DEAL_QUEST/">DealQuest App</a>
+          <p className="SliderText">I used knockout.js, Foundation, google map JavaScript API and Groupon Ajax API to make a deal search tool.</p>
+        </div> */}
       </Slider>
     );
   }
