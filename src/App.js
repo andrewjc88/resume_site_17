@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import ProjectsCarousel from './ProjectsCarousel.js';
-import LogoCarousel from './LogoCarousel.js';
+import ProjectsCarousel from './ProjectsCarousel';
+import LogoCarousel from './LogoCarousel';
+import RecCarousel from './recCarousel'
 import AOS from 'aos';
 import Logo from './img/logo.png';
 import Me from './img/me.jpg';
@@ -18,7 +19,7 @@ class App extends Component {
       delay: 200,
     });
 
-    
+
 
     return (
       
@@ -31,7 +32,7 @@ class App extends Component {
         </div>
 
         <div className='About Section' id='Test' data-aos="fade-up">
-          <h1>About Me</h1>
+          <h1>About</h1>
           <div className='AboutCont'>
             <img src={Me} className='Selfie'  alt="me"/>
             <p className="AboutMe">Driven, Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand expertise in web / mobile app development. Excels at communicating and collaborating in fast-paced environments. Enjoys rapid prototyping ideas and finding new creative solutions&nbsp;to&nbsp;problems.</p>
@@ -39,22 +40,29 @@ class App extends Component {
         </div>
 
         <div className='Projects Section' data-aos="fade-up">
-          <h1>My Projects</h1>
+          <h1>Projects</h1>
             <div className='Carousel'>
               <ProjectsCarousel/> 
             </div>
         </div>
 
+        <div className='RecCarousel Section' data-aos="fade-up">
+          <h1>Recommendations</h1>
+          <div className='Carousel'>
+            <RecCarousel/>
+          </div>
+        </div>
+
         <div className='Tools Section' data-aos="fade-up">
-          <h1>My Favorite Tools</h1>
+          <h1>Tools</h1>
           <p>Here are some of my favorite tools and technologies that I love to use to make the things that&nbsp;I&nbsp;make. </p>
           <LogoCarousel/>
         </div>
 
         <div className='Contact Section' id="contact" data-aos="fade-up">
-          <h1>Contact Me</h1>
+          <h1>Contact</h1>
           <div className='ContactCont'>
-            <h3>Andrew Cornell<br/>San Francisco, CA</h3>
+            <h3>Andrew Cornell<br/>San Francisco, CA<br/>(831) 419-4106</h3>
           <img className="QRimage" src={QRcode} alt="My QR Code"/>
           <div className="ContactLinks">
             <a href="mailto:contact@andrewjcornell.com">email</a>

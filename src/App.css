@@ -10,6 +10,7 @@ h1 {
   text-align: center;
   /* margin: .5em 1em; */
   color: #FF4A45;
+  padding: 1em;
 
 }
 
@@ -93,9 +94,7 @@ a:hover {
   margin: 2em 0em;
 
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ACEEE6), to(#ACBCEE));
-  background-image: -webkit-linear-gradient(top, start-color, end-color);
-  background-image: -moz-linear-gradient(top, start-color, end-color);
-  background-image: linear-gradient(to bottom, start-color, end-color);
+
   box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.185); 
 
   /* transition-property: all; */
@@ -128,12 +127,6 @@ a:hover {
   width: 70%;
   max-width: 25em; 
 
-  /* margin-top: 40%; */
-
-}
-
-.About {
-  /* padding-top: 4em; */
 }
 
 .AboutCont {
@@ -157,35 +150,14 @@ a:hover {
 
 .AboutMe {
   max-width: 40em;
-  /* margin: */
 }
-
-/* .Projects {
-  justify-content: center;
-  height: 100%;
-  min-height: 700px;
-
-} */
 
 .Carousel {
   width: 80%;
-  max-width: 40em;
-  /* height: 60%; */
-  /* height: 200px; */
-  /* padding: 40px; */
-  
+  max-width: 40em;  
 }
 
-.Slider {
-  /* max-width: 40em; */
-  /* width: 80%; */
-  /* max-height: 30em; */
-  
-  /* display: flex; */
-  /* height: auto; */
-  /* align-content: center; */
-  /* align-items: center; */
-}
+
 
 .SliderImg {
   width: 100%;
@@ -195,11 +167,17 @@ a:hover {
 
 }
 
-.Tools {
+.RecCarousel {
+  text-align: center;
+}
+
+.recSliderImg {
+  border-radius: 7em;
+  height: 5em;
+  margin: auto;
 }
 
 .LogoSlider {
-  /* box-shadow: inset 1px 4px 9px -6px grey;   */
   max-width: 40em;
   width: 80%;
   display: flex;
@@ -213,19 +191,11 @@ a:hover {
   flex-direction: row;
 }
 
-.ContactCont {
-  /* margin: 2em; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* font-size: 1em; */
-}
-
 .QRimage {
   width: 60%;
   max-width: 7em;
-  margin: 1em;
+  margin: 2em auto;
+  display: none;
   
 }
 
@@ -240,8 +210,12 @@ a:hover {
     flex-direction: row;
   }
 
+  .QRimage {
+    display: block;
+  }
+
   .Contact-Button {
-    right: 10vw;
+    right: 7vw;
   }
 
   .ContactLinks {
