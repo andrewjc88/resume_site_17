@@ -19,13 +19,15 @@ class RecCarousel extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       pauseOnHover: true,
-      autoplaySpeed: 6000,
+      autoplaySpeed: 9000,
+      lazyLoad: true,
       dots: true,
       adaptiveWidth: true, 
       responsive: [
         { breakpoint: 670, settings:{
           slidesToShow: 1,
           arrows: false,
+          autoplaySpeed: 12000,
         }}
       ]
     };

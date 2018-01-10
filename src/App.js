@@ -22,9 +22,9 @@ class App extends Component {
   render() {
 
     AOS.init({
-      duration: 500,
-      easing: 'ease-in-sine',
-      delay: 200,
+      duration: 1000,
+      easing: 'ease-in',
+      delay: 0,
     });
 
 
@@ -80,9 +80,10 @@ class App extends Component {
           </div>
           </div>
         </div>
+        <div id="pageBottom"></div>
         {this.state.clicked === false && 
           <a 
-            href="#contact" 
+            href="#pageBottom" 
             onClick={this.contactClicked}
             className="Contact-Button {this.state.clicked}">
             Contact

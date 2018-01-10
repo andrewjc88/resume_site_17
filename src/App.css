@@ -73,10 +73,11 @@ a:active {
   box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.185);
   background-color: rgb(235, 69, 63);
   color: white;
+  bottom: 1.3em;
 }
 
 .Contact-Button:active {
-  bottom: 1.3em;
+  bottom: 1.6em;
 }
 
 .App {
@@ -160,17 +161,12 @@ a:active {
 }
 
 .SliderImg {
+  
   width: 100%;
   padding: 1em 0em;
   margin: auto;
-  /* height: 5em; */
-
   transition: all .3s ease-in-out;
 
-}
-
-.SliderImg:hover {
-  filter: blur(1px) grayscale(50%);
 }
 
 .RecCarousel {

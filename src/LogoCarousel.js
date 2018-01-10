@@ -22,7 +22,7 @@ class LogoCarousel extends React.Component {
       slidesToScroll: 1,
       variableWidth: true,
       adaptiveWidth: true,
-      lazyLoad: false,
+      lazyLoad: true,
       swipe: true,
       responsive: [
         { breakpoint: 670, settings:{
