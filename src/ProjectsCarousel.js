@@ -54,6 +54,13 @@ class ProjectsCarousel extends React.Component {
           <p className="SliderText">An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.</p>
           <a href="https://github.com/andrewjc88/classicArcadeGame/">github</a>
         </div>
+        <div className='Slider'>
+          <a href="https://andrewjc88.github.io/frontend-nanodegree-feedreader/">
+            <img className='SliderImg' src={images["FeedReader.jpg"]} alt="FeedReader app"/>
+          </a>
+          <p className="SliderText">Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API.</p>
+          <a href="https://github.com/andrewjc88/frontend-nanodegree-feedreader/">github</a>
+        </div>
       </Slider>
     );
   }

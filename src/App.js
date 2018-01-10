@@ -23,7 +23,7 @@ class App extends Component {
 
     AOS.init({
       duration: 1000,
-      easing: 'ease-in',
+      easing: 'ease-in-out',
       delay: 0,
     });
 
@@ -32,11 +32,8 @@ class App extends Component {
     return (
       
       <div className="App">
-        {console.log(this.state.clicked)}
         <div className='Intro Section' >
           <img src={Logo} className="Logo" alt="Andrew Cornell logo" data-aos="fade-in"/>
-          {/* <button className='ScrollArrow' onClick={scrollWindow}></button> */}
-          {/* <a href="#Test Section">test</a> */}
         </div>
 
         <div className='About Section' id='Test' data-aos="fade-up">
@@ -70,7 +67,7 @@ class App extends Component {
         <div className='Contact Section' id="contact" data-aos="fade-up">
           <h1>Contact</h1>
           <div className='ContactCont'>
-            <h3>Andrew Cornell<br/>San Francisco, CA<br/>(831) 419–4106</h3>
+            <h3>Andrew Cornell<br/>San Francisco, CA<br/>(831) 419–4106</h3> 
           <img className="QRimage" src={QRcode} alt="My QR Code"/>
           <div className="ContactLinks">
             <a href="mailto:contact@andrewjcornell.com">email</a>

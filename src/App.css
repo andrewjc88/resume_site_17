@@ -32,8 +32,10 @@ a {
   font-size: 1.3em;
   text-transform: uppercase;
   color: rgb(58, 58, 58);
-  transition: all .3s ease-in-out;
   position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 a:hover {
@@ -43,11 +45,6 @@ a:hover {
 a:active {
   top: .2em;
 }
-
-.SliderImg:active {
-  filter: grayscale(20%);
-}
-
 
 .Contact-Button {
   font-size: 1em;
@@ -64,20 +61,20 @@ a:active {
   right: auto;
 
   box-shadow:  5px 5px 7px rgba(0, 0, 0, 0.185); 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
 }
 
 .Contact-Button:hover {
   top: initial;
-  box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.185);
-  background-color: rgb(235, 69, 63);
+  box-shadow:  4px 4px 6px rgba(0, 0, 0, 0.185);
   color: white;
-  bottom: 1.3em;
+  bottom: 1.4em;
 }
 
 .Contact-Button:active {
-  bottom: 1.6em;
+  top: initial;
+  bottom: 1.3em;
 }
 
 .App {
