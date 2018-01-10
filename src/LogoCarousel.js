@@ -11,26 +11,23 @@ class LogoCarousel extends React.Component {
     }
 
     const images = inportImgs(require.context('./img/logos', false, /\.(gif|png|jpe?g|svg)$/));
-    console.log('images');
-    // const slides = images.map((image) => 
-    //   <div><img className="logoImg" src='{image}' alt=""/></div>
-    // )
 
     let settings = {
-      // adaptiveHeight: true,
+      adaptiveHeight: true,
+      variableHeight: true,
       autoplay: true,
-      // speed: 900,
-      autoplaySpeed: 900,
+      autoplaySpeed: 1000,
       infinite: true,
-      // slidesToShow: 20,
-      // slidesToScroll: 1,
-      // dots: false,
-      // pauseOnHover: false,
+      slidesToShow: 6,
+      slidesToScroll: 1,
       variableWidth: true,
+      adaptiveWidth: true,
+      lazyLoad: false,
+      swipe: true,
       responsive: [
-        {
-
-        }
+        { breakpoint: 670, settings:{
+          slidesToShow: 3
+        }}
       ]
     };
 

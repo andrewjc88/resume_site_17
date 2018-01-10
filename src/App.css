@@ -37,17 +37,46 @@ a:hover {
   color: rgb(119, 119, 119);
 }
 
-.ScrollArrow {
-  background-image: url('./img/downArrow.svg');
-  max-width: 2em;
-  padding: 1em;  
+.Contact-Button {
+  display: inline-block;
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+  background-color: #FF4A45;
+  
+  position: fixed;
+  padding: .5em 1.2em;
+  border-radius: .7em;
+  margin: 1em 0em;
+  opacity: 1;
+  bottom: 1.5em;
+  right: auto;
+
+  box-shadow:  5px 5px 7px rgba(0, 0, 0, 0.185); 
+  transition: all 0.3s ease-in-out;
+
+}
+
+.Contact-Button:hover {
+  box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.185);
+  background-color: rgb(235, 69, 63);
+  color: white;
+}
+
+.Contact-Button:active {
+  background-color: rgb(196, 56, 52);
+  bottom: 1.2em;
+}
+
+.Contact-Button:active {
+  background-color: rgb(196, 56, 52);
+  bottom: 1.2em;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;  
-
 }
 
 .Section {
@@ -62,18 +91,23 @@ a:hover {
   flex-direction: column;
   align-items: center;
   margin: 2em 0em;
-  /* padding: 1em; */
 
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ACEEE6), to(#ACBCEE));
   background-image: -webkit-linear-gradient(top, start-color, end-color);
   background-image: -moz-linear-gradient(top, start-color, end-color);
   background-image: linear-gradient(to bottom, start-color, end-color);
-  box-shadow:  10px 10px 10px grey;
+  box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.185); 
+
+  /* transition-property: all; */
+  /* transition-duration: .3s ; */
   
 }
 
+/* .Section:hover {
+  box-shadow:  7px 7px 7px rgba(0, 0, 0, 0.185); 
+} */
+
 .Intro {  
-  /* justify-content: space-between; */
 
   height: 100vh;
   width: 100vw;
@@ -117,7 +151,7 @@ a:hover {
   max-width: 13em;
   min-width: 12em;
   border-radius: 10em;
-  box-shadow:  5px 5px 5px grey;
+  box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.185);
 
 }
 
@@ -126,12 +160,12 @@ a:hover {
   /* margin: */
 }
 
-.Projects {
-  /* justify-content: center; */
+/* .Projects {
+  justify-content: center;
   height: 100%;
   min-height: 700px;
 
-}
+} */
 
 .Carousel {
   width: 80%;
@@ -201,9 +235,13 @@ a:hover {
   flex-direction: column;
 }
 
-@media (min-width: 567px) {
+@media (min-width: 670px) {
   .AboutCont {
     flex-direction: row;
+  }
+
+  .Contact-Button {
+    right: 10vw;
   }
 
   .ContactLinks {

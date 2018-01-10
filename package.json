@@ -1,8 +1,8 @@
 {
-  "name": "resume_site_17",
+  "name": "andrewjcornell.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://andrewjc88.github.io/resume_site_17",
+  "homepage": "http://www.andrewjcornell.com",
   "dependencies": {
     "aos": "^2.2.0",
     "gh-pages": "^1.1.0",

@@ -3,9 +3,7 @@ import ProjectsCarousel from './ProjectsCarousel.js';
 import LogoCarousel from './LogoCarousel.js';
 import AOS from 'aos';
 import Logo from './img/logo.png';
-import DonwArrow from './img/downArrow.svg';
 import Me from './img/me.jpg';
-import codeImg from './img/code.jpg';
 import QRcode from './img/contactQR.png'
 import Resume from './downloads/Resume.pdf';
 import './App.css';
@@ -15,16 +13,12 @@ class App extends Component {
   render() {
 
     AOS.init({
-      
       duration: 500,
       easing: 'ease-in-sine',
       delay: 200,
     });
 
-    function scrollWindow() {
-      window.scrollTo(0, 550);
-    }
-
+    
 
     return (
       
@@ -39,7 +33,7 @@ class App extends Component {
         <div className='About Section' id='Test' data-aos="fade-up">
           <h1>About Me</h1>
           <div className='AboutCont'>
-            <img src={Me} className='Selfie'  alt="A picture of me"/>
+            <img src={Me} className='Selfie'  alt="me"/>
             <p className="AboutMe">Driven, Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand expertise in web / mobile app development. Excels at communicating and collaborating in fast-paced environments. Enjoys rapid prototyping ideas and finding new creative solutions&nbsp;to&nbsp;problems.</p>
           </div>
         </div>
@@ -57,11 +51,11 @@ class App extends Component {
           <LogoCarousel/>
         </div>
 
-        <div className='Contact Section' data-aos="fade-up">
+        <div className='Contact Section' id="contact" data-aos="fade-up">
           <h1>Contact Me</h1>
           <div className='ContactCont'>
             <h3>Andrew Cornell<br/>San Francisco, CA</h3>
-          <img className="QRimage" src={QRcode} alt="My QR Code image"/>
+          <img className="QRimage" src={QRcode} alt="My QR Code"/>
           <div className="ContactLinks">
             <a href="mailto:contact@andrewjcornell.com">email</a>
             <a href="https://www.linkedin.com/in/andrew-cornell-dev/">linkedin</a>
@@ -70,7 +64,7 @@ class App extends Component {
           </div>
           </div>
         </div>
-
+        <a href="#contact" className="Contact-Button">Contact</a>
       </div>
     );
   }
