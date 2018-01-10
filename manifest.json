@@ -1,6 +1,7 @@
 {
   "short_name": "Andrew Portfolio",
   "name": "Andrew Cornell Portfolio Site",
+  "description": "Andrew Cornell Fron-end Web Developer San Francisco Portfolio page",
   "icons": [
     {
       "src": "favicon.ico",
