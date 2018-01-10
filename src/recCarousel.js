@@ -24,7 +24,8 @@ class RecCarousel extends React.Component {
       adaptiveWidth: true, 
       responsive: [
         { breakpoint: 670, settings:{
-          slidesToShow: 1
+          slidesToShow: 1,
+          arrows: false,
         }}
       ]
     };

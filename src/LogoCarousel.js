@@ -26,7 +26,8 @@ class LogoCarousel extends React.Component {
       swipe: true,
       responsive: [
         { breakpoint: 670, settings:{
-          slidesToShow: 3
+          slidesToShow: 3,
+          arrows: false,
         }}
       ]
     };

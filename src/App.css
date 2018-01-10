@@ -10,7 +10,7 @@ h1 {
   text-align: center;
   /* margin: .5em 1em; */
   color: #FF4A45;
-  padding: 1em;
+  padding: 0em;
 
 }
 
@@ -32,14 +32,24 @@ a {
   font-size: 1.3em;
   text-transform: uppercase;
   color: rgb(58, 58, 58);
+  transition: all .3s ease-in-out;
+  position: relative;
 }
 
 a:hover {
-  color: rgb(119, 119, 119);
+  top: .1em;
 }
 
+a:active {
+  top: .2em;
+}
+
+.SliderImg:active {
+  filter: grayscale(20%);
+}
+
+
 .Contact-Button {
-  display: inline-block;
   font-size: 1em;
   text-decoration: none;
   color: white;
@@ -59,19 +69,14 @@ a:hover {
 }
 
 .Contact-Button:hover {
+  top: initial;
   box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.185);
   background-color: rgb(235, 69, 63);
   color: white;
 }
 
 .Contact-Button:active {
-  background-color: rgb(196, 56, 52);
-  bottom: 1.2em;
-}
-
-.Contact-Button:active {
-  background-color: rgb(196, 56, 52);
-  bottom: 1.2em;
+  bottom: 1.3em;
 }
 
 .App {
@@ -131,7 +136,6 @@ a:hover {
 
 .AboutCont {
   display: flex;
-  max-width: 40em;
   flex-direction: column;
   align-items: center;
   padding: 0em 2em;
@@ -140,24 +144,20 @@ a:hover {
 }
 
 .Selfie {
-  width: 50%;
-  max-width: 13em;
-  min-width: 12em;
+  width: 25%;
+  min-width: 7em;
   border-radius: 10em;
   box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.185);
 
 }
 
-.AboutMe {
-  max-width: 40em;
-}
-
 .Carousel {
-  width: 80%;
-  max-width: 40em;  
+  width: 95%;
 }
 
-
+.Projects {
+  min-height: 40em;
+}
 
 .SliderImg {
   width: 100%;
@@ -165,10 +165,17 @@ a:hover {
   margin: auto;
   /* height: 5em; */
 
+  transition: all .3s ease-in-out;
+
+}
+
+.SliderImg:hover {
+  filter: blur(1px) grayscale(50%);
 }
 
 .RecCarousel {
   text-align: center;
+  min-height: 60em;
 }
 
 .recSliderImg {
@@ -206,8 +213,23 @@ a:hover {
 }
 
 @media (min-width: 670px) {
+
+  h1 {
+    padding: 1em;
+  }
+
   .AboutCont {
     flex-direction: row;
+      max-width: 45em;
+  }
+
+  .AboutMe {
+    max-width: 40em;
+  }
+
+  .Carousel {
+    width: 80%;
+    max-width: 40em;  
   }
 
   .QRimage {
@@ -228,23 +250,9 @@ a:hover {
   }
 
   .Selfie {
+    width: 50%;
     margin: 1em;
-  }
-
-  .ContactCont {
-    /* flex-direction: row; */
-    /* max-width: 40em; */
-    /* justify-content: eve */
-    /* margin-right: 9%; */
-
-  }
-
-  /* .SliderText {
-    display: none;
-  } */
-
-  .SliderImg {
-    /* height: auto; */
+    max-width: 13em;
   }
 
 }

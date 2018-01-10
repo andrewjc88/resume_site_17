@@ -22,6 +22,12 @@ class ProjectsCarousel extends React.Component {
       autoplaySpeed: 6000,
       dots: true,
       adaptiveWidth: true, 
+      responsive: [
+        { breakpoint: 670, settings:{
+          slidesToShow: 1,
+          arrows: false,
+        }}
+      ]
     };
 
     return (
