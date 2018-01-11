@@ -38,6 +38,7 @@ class App extends Component {
 
         <div className='About Section' id='Test' data-aos="fade-up">
           <h1>About</h1>
+          <hr/>
           <div className='AboutCont'>
             <img src={Me} className='Selfie'  alt="me"/>
             <p className="AboutMe">Driven, Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand expertise in web / mobile app development. Excels at communicating and collaborating in fast-paced environments. Enjoys rapid prototyping ideas and finding new creative solutions&nbsp;to&nbsp;problems.</p>
@@ -46,6 +47,8 @@ class App extends Component {
 
         <div className='Projects Section' data-aos="fade-up">
           <h1>Projects</h1>
+          <hr/>
+          <br className='line'/>
             <div className='Carousel'>
               <ProjectsCarousel/> 
             </div>
@@ -53,6 +56,7 @@ class App extends Component {
 
         <div className='RecCarousel Section' data-aos="fade-up">
           <h1>Recommendations</h1>
+          <hr/>
           <div className='Carousel'>
             <RecCarousel/>
           </div>
@@ -60,12 +64,14 @@ class App extends Component {
 
         <div className='Tools Section' data-aos="fade-up">
           <h1>Tools</h1>
+          <hr/>
           <p>Here are some of my favorite tools and technologies that I love to use to make the things that&nbsp;I&nbsp;make. </p>
           <LogoCarousel/>
         </div>
 
         <div className='Contact Section' id="contact" data-aos="fade-up">
           <h1>Contact</h1>
+          <hr/>
           <div className='ContactCont'>
             <h3>Andrew Cornell<br/>San Francisco, CA<br/>(831) 419–4106</h3> 
           <img className="QRimage" src={QRcode} alt="My QR Code"/>
