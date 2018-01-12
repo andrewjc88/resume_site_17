@@ -9,7 +9,7 @@ hr {
   color: #FF4A45;
   margin: 1.5em 0em;
   width: 80%;
-  max-width: 50em;
+  max-width: 35em;
 }
 
 h1 {
@@ -32,109 +32,92 @@ p {
   color: rgb(58, 58, 58);
   margin: 2em;
   max-width: 40em;
-  text-align: justify; 
-  text-justify: inter-cluster;
-  text-align-last: center;
+  text-align: center; 
 }
 
-a {
-  
+.Button {
+  position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.3em;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgb(58, 58, 58);
-  position: relative;
-  transition-property: all;
-  transition-duration: .2s;
-  transition-timing-function: ease-in-out;
-}
-
-a:hover {
-  top: .1em;
-}
-
-a:active {
-  top: .2em;
-}
-
-.Contact-Button {
   font-size: 1em;
+  text-transform: uppercase;
   text-decoration: none;
   color: white;
   background-color: #FF4A45;
   border-radius: .7em;
   padding: .5em 1.2em;
+  bottom: 0em;
   
-  position: fixed;
-  margin: 1em 0em;
-  bottom: 1.5em;
-  right: auto;
+  margin: .5em 2em;
 
-  box-shadow:  5px 5px 7px rgba(0, 0, 0, 0.185); 
+  transition-property: all;
+  transition-duration: .1s;
+  transition-timing-function: ease-in-out;
 
+  box-shadow:  6px 6px 8px rgba(0, 0, 0, 0.185); 
 }
 
-.Contact-Button:hover {
+.Button:hover {
+  bottom: -.1em;
   top: initial;
   box-shadow:  4px 4px 6px rgba(0, 0, 0, 0.185);
   color: white;
-  bottom: 1.4em;
 }
 
-.Contact-Button:active {
-  top: initial;
-  bottom: 1.3em;
+.Button:active {
+  box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.185);
+  bottom: -.3em;
+}
+
+.Contact-Button {
+  position: fixed;
+  bottom: 5%;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;  
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(255, 108, 108)), tor rgb(255, 108, 108));
+
 }
 
 .Section {
 
   height: 100%;
-  width: 90vw;
-
+  width: 100vw;
+  max-width: 80em;
   padding: 6em 0em;
-
-  justify-content: center;
   align-items: center;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2em 0em;
-
+  margin: 2em auto;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ACEEE6), to(#ACBCEE));
-
   box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.185); 
-
-  /* transition-property: all; */
-  /* transition-duration: .3s ; */
+  transition-property: all;
+  transition-duration: .3s;
   
 }
 
-/* .Section:hover {
+.Section:hover {
   box-shadow:  7px 7px 7px rgba(0, 0, 0, 0.185); 
-} */
+} 
 
 .Intro { 
-  margin: 0;
+
   padding: 0;
+  margin: 0;
+  margin-bottom: 2em;
   height: 100vh;
   width: 100vw;
-
-  margin: 0;
 
   background-image: url("./img/pattern.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 50%;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: auto; 
   overflow: hidden;
 
@@ -143,14 +126,15 @@ a:active {
 .Logo {
   width: 70%;
   max-width: 25em; 
-
+  margin: auto;
 }
 
 .AboutCont {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em 3em;
+  padding: 2em 0em;
+  text-align: center; 
   justify-content: space-between;
 
 }
@@ -167,8 +151,8 @@ a:active {
   width: 95%;
 }
 
-.Projects {
-  min-height: 40em;
+.Slider {
+  margin: 1em 0em;
 }
 
 .SliderImg {
@@ -180,14 +164,10 @@ a:active {
 
 }
 
-.RecCarousel {
-  /* text-align: center; */
-}
-
 .recSliderImg {
-  border-radius: 7em;
-  width: 6em;
-  height: 6em;
+  border-radius: 10em;
+  width: 7em;
+  height: 7em;
   margin: 1em auto;
 }
 
@@ -215,23 +195,44 @@ a:active {
 
 .ContactLinks {
   display: flex;
-  font-size: .8em;
+  /* font-size: .8em;
+  margin: 0em 0em;
+  padding: 0; */
   flex-direction: column;
+}
+
+.Contact {
+  margin-bottom: 4em;
 }
 
 @media (min-width: 670px) {
 
-  /* h1 {
-    padding: 1em;
-  } */
+  .Button {
+    margin: 1em 2em;
+  }
+
+  .Section {
+    width: 90vw;
+    max-width: 70em;
+    
+  }
+
+  .Intro {
+    width: 100vw;
+    max-width: 110em;
+    
+  }
 
   .AboutCont {
     flex-direction: row;
     max-width: 45em;
+    padding: 2em 3em;
+    text-align: left; 
   }
 
   .AboutMe {
-    max-width: 40em;
+    text-align: left; 
+
   }
 
   .Carousel {

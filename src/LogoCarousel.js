@@ -38,7 +38,7 @@ class LogoCarousel extends React.Component {
         <div><img className="logoImg" src={images["adobe-illustrator-cc.png"]} alt="adobe-illustrator"/></div>
         <div><img className="logoImg" src={images["affinity-designer.png"]} alt="affinity-designer"/></div>
         <div><img className="logoImg" src={images["photoshop-cc.png"]} alt="photoshop"/></div>
-        <div><img className="logoImg" src={images["affinity-photo.png"]} alt="affinity-photo"/></div>
+        <div><img className="logoImg" src={images["affinity-photo.png"]} alt="affinity"/></div>
         <div><img className="logoImg" src={images["Sketch_logo_frame.svg.png"]} alt="Sketch"/></div>
         <div><img className="logoImg" src={images["creative-cloud-cc.png"]} alt="creative-cloud"/></div>
         <div><img className="logoImg" src={images["logo-redux.png"]} alt="logo-redux"/></div>
