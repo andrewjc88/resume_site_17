@@ -78,7 +78,7 @@ class App extends Component {
 
         <div id="bottom"></div>
 
-        <div data-aos="fade-up">
+        <div data-aos="fade-in">
           <div className='Contact Section' id="contact">
             <h1>Contact</h1>
             <hr/>

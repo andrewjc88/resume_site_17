@@ -114,11 +114,11 @@ p {
 
   background-image: url("./img/pattern.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-position: 50% 50%;
-  background-attachment: fixed;
-  background-position: auto; 
-  overflow: hidden;
+  /* background-attachment: fixed; */
+  /* background-position: auto;  */
+  /* overflow: hidden; */
 
 }
 
