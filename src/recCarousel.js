@@ -42,6 +42,13 @@ class RecCarousel extends React.Component {
           <p className="SliderText">"I had the pleasure of working with Andrew for the past year while at Pepperjam. Andrew embodies so many of the qualities that I look for when building a staff. He is fully dedicated to his craft and always curious to learn and understand new aspects of design/creativity from every possible direction. Without prompting, Andrew explores paths that compliment not only his core talents but also the business itself, constantly seeking how to do something better. He is a certified whiz in Photoshop, working quickly and proficiently to produce flawless design executions. And his broad creative abilities (photography, branding, HTML) are often used to support his solutions. Finally, Andrew's consistent professionalism leads to consistent success in him and those around him. If you are looking for a designer to add to your staff or project, please consider Andrew."</p>
         </div>
         <div className='Slider'>
+          <a href="https://www.linkedin.com/in/cwhyte/">
+            <img className='recSliderImg' src={images["charles.jpg"]} alt="My Reads app"/>
+          </a>
+          <h3>Charles Whyte<br/>Product Owner at Pepperjam</h3>
+          <p className="SliderText">"Andrew is a fantastic designer and a real pleasure to work with. Always up on the latest tech, Andrew was instrumental in suggesting ways to improve process and solve existing problems. Andrew's creative spirit and curiosity makes him a real asset."</p>
+        </div>
+        <div className='Slider'>
           <a href="https://www.linkedin.com/in/chris-mccready-1094a673/">
             <img className='recSliderImg' src={images["chris.jpg"]} alt="DealQuest app"/>
           </a>
