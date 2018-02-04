@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import ProjectsCarousel from './ProjectsCarousel';
 import LogoCarousel from './LogoCarousel';
 import RecCarousel from './recCarousel'
+import Contact from './contact';
 import AOS from 'aos';
 import Logo from './img/logo.png';
 import Me from './img/me.jpg';
-import QRcode from './img/contactQR.png'
-import Resume from './downloads/Resume.pdf';
 import './App.css';
 
 class App extends Component {
@@ -76,25 +75,13 @@ class App extends Component {
           </div>
         </div>
 
-        <div id="bottom"></div>
-
-        <div data-aos="fade-in">
-          <div className='Contact Section' id="contact">
-            <h1>Contact</h1>
-            <hr/>
-            <div className='ContactCont'>
-              <h3>Andrew Cornell<br/>San Francisco, CA<br/>(831) 419–4106</h3> 
-            <img className="QRimage" src={QRcode} alt="My QR Code"/>
-            <div className="ContactLinks">
-              <a className='Button' href="mailto:contact@andrewjcornell.com">email</a>
-              <a className='Button' href="https://www.linkedin.com/in/andrew-cornell-dev/">linkedin</a>
-              <a className='Button' href="https://github.com/andrewjc88">github</a>
-              <a className='Button' href={Resume} download>Resume</a>
-            </div>
-            </div>
-          </div>
+        <div data-aos="fade-in" id="bottom">
+          <Contact/>
         </div>
 
+        <div className='footer' >
+          <span>Site By Andrew Cornell 2017</span>
+        </div>
 
         {
           this.state.clicked === false && 

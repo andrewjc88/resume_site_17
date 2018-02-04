@@ -81,6 +81,15 @@ p {
 
 }
 
+.footer {
+  background-Color: rgb(22, 22, 22);
+  width: 100%;
+  color: white;
+  height: auto;
+  font-size: .8em;
+  padding: .4em 1em;
+}
+
 .Section {
 
   /* height: 100%; */
