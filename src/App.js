@@ -26,10 +26,7 @@ class App extends Component {
       // delay: 2,
     });
 
-
-
     return (
-      
       <div className="App">
         <div className='Intro Section' >
           <img src={Logo} className="Logo" alt="Andrew Cornell logo" data-aos="fade-in"/>
