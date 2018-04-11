@@ -77,7 +77,7 @@ class App extends Component {
         </div>
 
         <div className='footer' >
-          <span>Site By Andrew Cornell 2017</span>
+          <span>Site By Andrew Cornell 2017. All rights reserved.</span>
         </div>
 
         {
