@@ -41,13 +41,13 @@ class ProjectsCarousel extends React.Component {
           <a className='Button' href="https://andrewjc88.github.io/myreads-app/">Project</a>
           <a className='Button' href="https://github.com/andrewjc88/myreads-app">github</a>
         </div>
-        <div className='Slider'>
+        {/* <div className='Slider'>
           <a href="https://projects.invisionapp.com/share/YVCBYWF8A#/screens/240783924">
             <img className='SliderImg' src={images["maregroup.png"]} alt="Mare Group"/>
           </a>
           <p className="SliderText">Successfully redesigned site using Skethc and invision. Incorporated feedback while honing content and improving overall aesthetic and mobile accessibility of content.</p>
           <a className='Button' href="https://projects.invisionapp.com/share/YVCBYWF8A#/screens/240783924">Project</a>
-        </div>
+        </div> */}
         <div className='Slider'>
           <a href="https://andrewjc88.github.io/DEAL_QUEST/">
             <img className='SliderImg' src={images["DealQuest.jpg"]} alt="DealQuest app"/>
