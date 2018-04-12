@@ -6,18 +6,20 @@
 
 hr {
   border-style: solid;
-  color: #FF4A45;
-  margin: 1.5em 0em;
+  color: #FF5B45;
+  margin: 1em 0em;
   width: 80%;
   max-width: 35em;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'avenir', sans-serif;
   font-weight: 800; 
   text-align: left;
   margin: 0em 0em;
-  color: #FF4A45;
+  letter-spacing: 2px;
+  color: #FF5B45;
+  letter-spacing: 3px;
   padding: 0em;
 }
 
@@ -26,9 +28,10 @@ h3 {
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "avenir", sans-serif;
   font-weight: 300;
-  color: rgb(58, 58, 58);
+  
+  color: #606060;
   margin: 2em;
   max-width: 40em;
   text-align: left; 
@@ -42,7 +45,7 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  background-color: #FF4A45;
+  background-color: #FF5B45;
   border-radius: .7em;
   padding: .5em 1.2em;
   bottom: 0em;

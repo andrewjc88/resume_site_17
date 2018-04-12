@@ -37,7 +37,9 @@ class App extends Component {
             <hr/>
             <div className='AboutCont'>
               <img src={Me} className='Selfie'  alt="me"/>
-              <p className="AboutMe">Driven, Detail oriented, self-taught, Front-end Web Developer with strong graphic design background looking to establish and expand expertise in web / mobile app development. Excels at communicating and collaborating in fast-paced environments. Enjoys rapid prototyping ideas and finding new creative solutions&nbsp;to&nbsp;problems.</p>
+              <p className="AboutMe">
+              I bring years of visual design experience coupled with user-centered design tenets and equally strong front-end engineering practices to help you succeed in your projects from start&nbsp;to&nbsp;finish.
+              </p>
             </div>
           </div>
         </div>
@@ -55,7 +57,7 @@ class App extends Component {
 
         <div data-aos="fade-up">
           <div className='RecCarousel Section'>
-            <h1>Recommendations</h1>
+            <h1>Reviews</h1>
             <hr/>
             <div className='Carousel'>
               <RecCarousel/>
