@@ -38,7 +38,7 @@ class App extends Component {
             <div className='AboutCont'>
               <img src={Me} className='Selfie'  alt="me"/>
               <p className="AboutMe">
-              I bring years of visual design experience coupled with user-centered design tenets and equally strong front-end engineering practices to help you succeed in your projects from start&nbsp;to&nbsp;finish.
+                Front-end Engineer with years of experience and a strong background in design. JavaScript for breakfast, lunch, and dinner. An ardent lover of all things React and Node. Let's build something great together!
               </p>
             </div>
           </div>
