@@ -38,7 +38,7 @@ class App extends Component {
             <div className='AboutCont'>
               <img src={Me} className='Selfie'  alt="me"/>
               <p className="AboutMe">
-                Front-end Engineer with years of experience and a strong background in design. JavaScript for breakfast, lunch, and dinner. An ardent lover of all things React and Node. Let's build something great together!
+                Front-end Engineer with years of experience and a strong background in design. JavaScript for breakfast, lunch, and dinner. An ardent fan of all things React and Node. Let's build something great together!
               </p>
             </div>
           </div>

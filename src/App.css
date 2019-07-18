@@ -141,7 +141,7 @@ p {
 }
 
 .Logo {
-  /* width: 70%; */
+  width: 300px;
   max-width: 25em;
   margin: auto;
 }
@@ -223,6 +223,10 @@ p {
 }
 
 @media (min-width: 670px) {
+
+  .Logo {
+    width: auto;
+  }
 
   .Button {
     margin: 1em 2em;
