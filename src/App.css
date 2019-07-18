@@ -141,8 +141,8 @@ p {
 }
 
 .Logo {
-  width: 70%;
-  max-width: 25em; 
+  /* width: 70%; */
+  max-width: 25em;
   margin: auto;
 }
 
