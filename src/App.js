@@ -44,7 +44,7 @@ class App extends Component {
           </div>
         </div>
 
-        <div data-aos="fade-up">
+        {/* <div data-aos="fade-up">
           <div className='Projects Section'>
             <h1>Projects</h1>
             <hr/>
@@ -53,11 +53,11 @@ class App extends Component {
                 <ProjectsCarousel/> 
               </div>
           </div>
-        </div>
+        </div> */}
 
         <div data-aos="fade-up">
           <div className='RecCarousel Section'>
-            <h1>Reviews</h1>
+            <h1>Recommendations</h1>
             <hr/>
             <div className='Carousel'>
               <RecCarousel/>

@@ -35,6 +35,20 @@ class RecCarousel extends React.Component {
     return (
       <Slider {...settings}>
         <div className='Slider'>
+          <a href="https://www.linkedin.com/in/steven-cheong-55404bbb/">
+            <img className='recSliderImg' src={images["steven.jpeg"]} alt="My Reads app"/>
+          </a>
+          <h3>Steven Cheong<br/>Senior Engineering Tech Lead at Datatron Technologies Inc.</h3>
+          <p className="SliderText">"Andrew is an excellent team player. In the frontend team, he is usually the person his teammates seek help from and he is always willing to help. When it comes to development, Andrew always uses his previous UX experience to bring great ideas during the development process. He is also a go-getter - I still remember when Andrew first joined. After just 1 or 2 weeks, he was already pushing the team to migrate our Angular application to React. He took ownership of the project with another frontend team member and made it happened. All in all, Andrew would be a great addition to any team that highly values teamwork, boldness, and curiosity."</p>
+        </div>
+        <div className='Slider'>
+          <a href="https://www.linkedin.com/in/aaronhdong/">
+            <img className='recSliderImg' src={images["aaron.jpeg"]} alt="My Reads app"/>
+          </a>
+          <h3>Aaron Dong<br/>Product Designer at Datatron Technologies Inc.</h3>
+          <p className="SliderText">"Andrew is not only an excellent engineer but also one of the most motivated, smart, and hard-working teammates I’ve had the pleasure of working with ever. Whether he’s working diligently to build out the frontend from the ground up, collaborating on ways to improve the UI/UX of the platform, or just being an overall awesome teammate, I’ve never met someone more willing to go above and beyond for the people around him. Andrew has a talent for quickly developing features in code, identifying places for UI/UX improvements, and providing relevant and constructive feedback. I knew I could trust Andrew to bring my designs to life. His enthusiasm, eagerness to learn, and overall positive personality have been a very positive highlight in our time working together. It has been an amazing time working alongside Andrew and wherever his career takes him next, I wholeheartedly believe he will be the perfect addition to your team."</p>
+        </div>
+        <div className='Slider'>
           <a href="https://www.linkedin.com/in/kevin-breen-6762164/">
             <img className='recSliderImg' src={images["kevin.jpg"]} alt="My Reads app"/>
           </a>
@@ -54,13 +68,6 @@ class RecCarousel extends React.Component {
           </a>
           <h3>Chris McCready<br/>Head / VP of Business Development</h3>
           <p className="SliderText">"Andrew is a fantastic person to have on your team. Not only is he an extremely talented designer, he has a constant hunger for learning and growth. Though it wasn't always part of his responsibilities, Andrew would jump in to help us in Business Development for collateral, marketing materials, presentations...basically anything anyone needed. I think my favorite thing about working with him was his work ethic. He was always happy to be there every day and so humble it made giving compliments to him even more fun. The display ads he created, always on tight deadlines, for clients across the globe resulted in a great deal of revenue for all companies involved. I truly hope we get to cross paths again professionally as he'd be a great asset on ANY team!"</p>
-        </div>
-        <div className='Slider'>
-          <a href="https://www.linkedin.com/in/jesse-hoffmann-36a58149/">
-            <img className='recSliderImg' src={images["jesse.jpg"]} alt="Jesse Hoffman"/>
-          </a>
-          <h3>Jesse Hoffmann<br/>Senior User Experience Architect</h3>
-          <p className="SliderText">"Andrew worked under me for a few years, first through mentorship and private contracting and then hired on to AffiliateTraction which was further acquired by Pepperjam. At AffiliateTraction, he created countless online display ads for hundreds of major brand retailers and learned techniques for satisfying their quality expectations with the utmost efficiency. He was a part of a team of only 3 that produced consistent, quality results and turned out thousands of ads per year under very tight deadlines. Andrew also produced ads for companies located in the UK and Australia so he has experience, not just in high volume, but meeting wide varying expectations across clients."</p>
         </div>
       </Slider>
     );
